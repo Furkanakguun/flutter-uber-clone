@@ -55,20 +55,55 @@ class _MainPageState extends State<MainPage> {
                   ),
                 ],
               ),
-              child: Column(
-                children: <Widget>[
-                  SizedBox(
-                    height: 5.0,
-                  ),
-                  Text(
-                    'Nice to see you!',
-                    style: TextStyle(fontSize: 10.0),
-                  ),
+              child: Padding(
+                padding: EdgeInsets.symmetric(horizontal: 24, vertical: 18),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    SizedBox(
+                      height: 5.0,
+                    ),
                     Text(
-                    'Where are you going Haa',
-                    style: TextStyle(fontSize: 10.0,fontFamily: 'Brand-Bold'),
-                  ),
-                ],
+                      'Nice to see you!',
+                      style: TextStyle(fontSize: 12.0),
+                    ),
+                    Text(
+                      'Where are you going ?',
+                      style:
+                          TextStyle(fontSize: 18.0, fontFamily: 'Brand-Bold'),
+                    ),
+                    SizedBox(
+                      height: 20,
+                    ),
+                    Container(
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(4),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.black12,
+                            blurRadius: 5.0,
+                            spreadRadius: 0.5,
+                            offset: Offset(
+                              0.7,
+                              0.7,
+                            ),
+                          ),
+                        ],
+                      ),
+                      child: Padding(
+                        padding: const EdgeInsets.all(12.0),
+                        child: Row(
+                          children: [
+                            Icon(Icons.search, color: Colors.blueAccent),
+                            SizedBox(width: 10.0,),
+                            Text('Search Destination')
+                          ],
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
               ),
             ),
           ),
