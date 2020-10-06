@@ -65,8 +65,8 @@ class _MainPageState extends State<MainPage> {
                     style: TextStyle(fontSize: 10.0),
                   ),
                     Text(
-                    'Where are you going',
-                    style: TextStyle(fontSize: 10.0),
+                    'Where are you going Haa',
+                    style: TextStyle(fontSize: 10.0,fontFamily: 'Brand-Bold'),
                   ),
                 ],
               ),
