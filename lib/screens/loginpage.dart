@@ -134,8 +134,10 @@ class _LoginPageState extends State<LoginPage> {
                         title: 'LOGIN',
                         color: BrandColors.colorGreen,
                         onPressed: () async {
+                          //gecici kod
+                          Navigator.pushNamedAndRemoveUntil(
+              context, MainPage.id, (route) => false);
                           //Check network availability
-
                           var connectiviytResult =
                               await Connectivity().checkConnectivity();
                           if (connectiviytResult != ConnectivityResult.mobile &&

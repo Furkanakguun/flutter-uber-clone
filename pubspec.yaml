@@ -22,6 +22,7 @@ dependencies:
   cloud_firestore: ^0.14.0
   connectivity: ^0.4.9+3
   google_maps_flutter: ^1.0.2
+  outline_material_icons: ^0.1.1
 
 dev_dependencies:
   flutter_test:
